@@ -2,6 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<script type="text/javascript">
+function tick() {
+  var age = (new Date().getTime() - new Date().setTime(453900600000)) / 31536000000;
+  document.getElementById("age").innerHTML = age.toFixed(8);
+}
+</script>
 <style type="text/css">
 body {
   font-size: 20px;
@@ -31,10 +37,12 @@ p { margin: 10px 0 0 0; }
 </style>
 <title>James Dennes</title>
 </head>
-<body>
+<body onload="setInterval('tick()', 1000)">
 <div id="container">
 <img id="profile" src="./profile.jpg" width="245" height="300" alt="me" /><h1>Hey, I'm James Dennes.</h1>
-<p>I really enjoy writing software, which is why I work on <a href="http://campaignmonitor.com/">Campaign Monitor</a> at <a href="http://freshview.com/">Freshview</a> in <a href="http://en.wikipedia.org/wiki/Sydney">Sydney, Australia</a>. I try to <a href="http://twitter.com/jdennes">tweet</a> about things that interest me too.</p>
+<p>I am a <span id="age"></span> year old human being (according to your computer) currently inhabiting <a href="http://en.wikipedia.org/wiki/Sydney">Sydney, Australia</a>.</p>
+<p>I enjoy writing software, which is why I'm happily working on <a href="http://campaignmonitor.com/">Campaign Monitor</a> at <a href="http://freshview.com/">Freshview</a>. I previously wrote telecommunications software and studied computer science at <a href="http://www.uts.edu.au">UTS</a>.</p>
+<p>I also enjoy writing, playing and listening to music. I try to <a href="http://twitter.com/jdennes">tweet</a> about things that interest me too.</p>
 </div>
 </body>
 </html>
