@@ -14,10 +14,12 @@
   <body onload="setInterval('tick()', 1000)">
     <div id="container">
       <div id="head">
-        <h1>Hey, I'm James Dennes</h1>
+        <img id="profile" src="http://a1.twimg.com/profile_images/54427572/profile_bigger.jpg" 
+          width="60" height="60" alt="me" />
+        <h1>Hey, I'm James Dennes...</h1>
       </div>
       <div id="story">
-        <h2>Story...</h2>
+        <h2>Narrative</h2>
         <p>I am a <span id="age">25</span> year old human being currently inhabiting 
         <a href="http://en.wikipedia.org/wiki/Sydney">Sydney, Australia</a>.</p>
         <p>I enjoy writing software, which is why I'm happily working on 
@@ -31,12 +33,12 @@
       </div>
       <div id="tweeting">
         <div class="refresh"><a href="#">Refresh</a></div>
-        <h2>Tweeting...</h2>
+        <h2>Tweeting</h2>
         <div id="tweets"></div>
       </div>
       <div id="listening">
         <div class="refresh"><a href="#">Refresh</a></div>
-        <h2>Listening...</h2>
+        <h2>Listening</h2>
         <div id="lastfm">
           <dl>
             <dt class="lfm_art"><a href="#"></a></dt>
@@ -46,7 +48,9 @@
           </dl>
         </div>
       </div>
-      <div id="foot"></div>
+      <div id="foot">Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
+        All code used in the making of this site is publicly available on 
+        <a href="http://github.com/jdennes/jdennes.github.com/">GitHub</a>.</div>
     </div>
     <script type="text/javascript" charset="utf-8">
     getTwitters('tweets', { 
