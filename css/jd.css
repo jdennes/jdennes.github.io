@@ -1,0 +1,103 @@
+body {
+  font-size: 18px;
+  background-color: #000000;
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+}
+a:link, a:visited { color: #dc000b; text-decoration:none; }
+a:hover, a:focus { text-decoration: underline; }
+p { margin: 10px 0 0 0; }
+div#container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 960px;
+  padding: 16px;
+  overflow: hidden;
+  position: relative;
+}
+div#head { width: 960px; }
+h1 {
+  font-size: 80px;
+  letter-spacing: -5px;
+  line-height: 90%;
+  margin: 0;
+  text-align: left;
+}
+h2 {
+  font-size: 22px;
+  font-family: georgia, palatino, "times new roman", times, serif;
+  color: #dc000b;
+  margin: 8px 0;
+}
+img#profile {
+  float: right;
+  border: 1px solid #000000;
+  margin: 4px 4px 0 0;
+}
+div#story {
+  float: left;
+  width: 470px;
+}
+div.refresh {
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  padding: 20px 6px 0 0;
+}
+div#listening {
+  float: left;
+  width: 225px;
+  margin: 0 0 0 20px;
+  font-size: 14px;
+}
+div#tweeting {
+  float: left;
+  width: 225px;
+  margin: 0 0 0 20px;
+  font-size: 14px;
+}
+#tweets ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0;
+  font-family: georgia, palatino, "times new roman", times, serif;
+  font-style: italic;
+}
+#tweets li { padding: 0 0 8px 0; }
+
+#lastfm dl {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin:0 0 10px 0;
+}
+#lastfm dl dt {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+#lastfm dl dt a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+}
+#lastfm .lfm_art img {
+  width: 34px;
+  height: 34px;
+}
+#lastfm dl dd.lfm_song {
+  font-weight: bold;
+  padding-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 0 0 42px;
+}
+#lastfm dl dd.lfm_artist,
+#lastfm dl dd.lfm_album {
+  color: #666666;
+  margin: 0 0 0 42px;
+}
+div#foot { }
