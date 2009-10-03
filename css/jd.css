@@ -43,7 +43,7 @@ div#about {
 }
 span#age { 
   font-family: monospace;
-  font-size: 90%;
+  font-size: 80%;
 }
 div.refresh {
   float: right;
@@ -64,7 +64,7 @@ div#tweeting {
   margin: 0 0 0 20px;
   font-size: 14px;
 }
-#tweets ul {
+div#tweets ul {
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
@@ -72,8 +72,11 @@ div#tweeting {
   font-family: georgia, palatino, "times new roman", times, serif;
   font-style: italic;
 }
-#tweets li { padding: 0 0 8px 0; }
-
+div#tweets li { padding: 0 0 8px 0; }
+div#tweets a.when {
+  font-size: 12px;
+  font-style: normal;
+}
 #lastfm dl {
   position: relative;
   float: left;
@@ -104,10 +107,12 @@ div#tweeting {
   overflow: hidden;
   margin: 0 0 0 42px;
 }
-#lastfm dl dd.lfm_artist,
-#lastfm dl dd.lfm_album {
+#lastfm dl dd.lfm_artist {
   color: #666666;
   margin: 0 0 0 42px;
+}
+#lastfm dl dd.lfm_time {
+  font-size: 12px;
 }
 div#foot {
   margin: 10px 0 0 0;

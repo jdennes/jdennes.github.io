@@ -10,67 +10,68 @@
 ---------------*/
 
 (function($){
-	$.fn.lastFM = function(options) {
-		
-		var defaults = {
-			number: 10,
-			username: 'willblackmore',
-			apikey: '96e0589327a3f120074f74dbc8ec6443',
-			artSize: 'medium',
-			noart: 'images/noartwork.gif',
-			onComplete: function(){}
-		},
-		settings = $.extend({}, defaults, options);
+  $.fn.lastFM = function(options) {
+    
+    var defaults = {
+      number: 10,
+      username: 'willblackmore',
+      apikey: '96e0589327a3f120074f74dbc8ec6443',
+      artSize: 'medium',
+      noart: 'images/noartwork.gif',
+      onComplete: function(){}
+    },
+    settings = $.extend({}, defaults, options);
 
-		var lastUrl = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+settings.username+'&api_key='+settings.apikey+'&limit='+settings.number+'&format=json&callback=?';
-		var $this = $(this);
-		
-		var container = $this.html();
-		
-		$this.children(':first').remove();
-		
-		if(settings.artSize == 'small'){imgSize = 0}
-		if(settings.artSize == 'medium'){imgSize = 1}
-		if(settings.artSize == 'large'){imgSize = 2}
+    var lastUrl = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+settings.username+'&api_key='+settings.apikey+'&limit='+settings.number+'&format=json&callback=?';
+    var $this = $(this);
+    
+    var container = $this.html();
+    
+    $this.children(':first').remove();
+    
+    if(settings.artSize == 'small'){imgSize = 0}
+    if(settings.artSize == 'medium'){imgSize = 1}
+    if(settings.artSize == 'large'){imgSize = 2}
 
-		this.each(function() {
-			
-			$.getJSON(lastUrl, function(data){ 
-				$.each(data.recenttracks.track, function(i, item){
+    this.each(function() {
+      
+      $.getJSON(lastUrl, function(data){ 
+        $.each(data.recenttracks.track, function(i, item){
 
-					if(item.image[1]['#text'] == ''){
-						art = settings.noart;
-					}else{
-						art = stripslashes(item.image[imgSize]['#text']);
-					}
+          if(item.image[1]['#text'] == ''){
+            art = settings.noart;
+          }else{
+            art = stripslashes(item.image[imgSize]['#text']);
+          }
 
-					url = stripslashes(item.url);
-					song = item.name;
-					artist = item.artist['#text'];
-					album = item.album['#text'];
+          url = stripslashes(item.url);
+          song = item.name;
+          artist = item.artist['#text'];
+          album = item.album['#text'];
+          time = item.date['uts'];
 
-					$this.append(container);
-					
-					var $current = $this.children(':eq('+i+')');
-					
-					$current.find('[class=lfm_song]').append(song);
-					$current.find('[class=lfm_artist]').append(artist);
-					$current.find('[class=lfm_album]').append(album);
-					$current.find('[class=lfm_art]').append("<img src='"+art+"' alt='Artwork for "+album+"'/>");
-					$current.find('a').attr('href', url).attr('title', 'Listen to '+song+' on Last.FM').attr('target', '_blank');
-					
-					//callback
-					if(i==(settings.number-1)){
-						settings.onComplete.call(this);
-					}
-					
-				});
-			});
-		});
-	};
-	
-	//Clean up the URL's
-	function stripslashes( str ) {	 
-		return (str+'').replace(/\0/g, '0').replace(/\\([\\'"])/g, '$1');
-	}
+          $this.append(container);
+
+          var $current = $this.children(':eq('+i+')');
+
+          $current.find('[class=lfm_song]').append(song);
+          $current.find('[class=lfm_artist]').append(artist);
+          $current.find('[class=lfm_art]').append("<img src='"+art+"' alt='Artwork for " + album + "'/>");
+          $current.find('[class=lfm_time]').append("about " + prettyDate(time));
+          $current.find('a').attr('href', url).attr('title', song + ' on Last.fm').attr('target', '_blank');
+          
+          // callback
+          if(i==(settings.number-1)){
+            settings.onComplete.call(this);
+          }
+          
+        });
+      });
+    });
+  };
+  
+  //Clean up the URL's
+  function stripslashes( str ) {   
+    return (str+'').replace(/\0/g, '0').replace(/\\([\\'"])/g, '$1');
+  }
 })(jQuery);
