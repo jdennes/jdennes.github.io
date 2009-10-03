@@ -30,13 +30,15 @@
         <p>I also enjoy writing, playing and listening to 
         <a href="http://www.last.fm/user/jdennes">music</a> and also try to 
         <a href="http://twitter.com/jdennes">tweet</a> about things that interest me.</p>
+        <p>You can also find me on <a href="http://www.linkedin.com/in/jdennes">LinkedIn</a> which 
+        records more information about me from a professional perspective.</p>
       </div>
       <div id="tweeting">
         <div class="refresh">
           <img id="tweeting-loading" src="img/loading.gif" width="16" height="16" alt="Loading..." />
           <a id="tweeting-refresh" href="#">Refresh</a>
         </div>
-        <h2><a href="http://twitter.com/jdennes" target="_blank">Tweeting</a></h2>
+        <h2><a href="http://twitter.com/jdennes"">Tweeting</a></h2>
         <div id="tweets"></div>
       </div>
       <div id="listening">
@@ -44,15 +46,8 @@
           <img id="listening-loading" src="img/loading.gif" width="16" height="16" alt="Loading..." />
           <a id="listening-refresh" href="#">Refresh</a>
         </div>
-        <h2><a href="http://last.fm/user/jdennes" target="_blank">Listening</a></h2>
-        <div id="lastfm">
-          <dl>
-            <dt class="lfm_art"><a href="#"></a></dt>
-            <dd class="lfm_song"></dd>
-            <dd class="lfm_artist"></dd>
-            <dd class="lfm_album"></dd>
-          </dl>
-        </div>
+        <h2><a href="http://last.fm/user/jdennes">Listening</a></h2>
+        <div id="lastfm"></div>
       </div>
       <div id="foot">Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
         All code used in the making of this site is publicly available on 
@@ -63,7 +58,7 @@
       $('img#tweeting-loading').show();
       $('div#tweets').hide();
       getTwitters('tweets', { 
-        id: 'jdennes', count: 5, enableLinks: true, ignoreReplies: true, clearContents: true,
+        id: 'jdennes', count: 6, enableLinks: true, ignoreReplies: true, clearContents: true,
         template: '"%text%" <a class="when" href="http://twitter.com/%user_screen_name%/statuses/%id%/">%time%</a>'
       });
       $('div#tweets').show();
@@ -71,11 +66,14 @@
     }
     function loadListening() {
       $('img#listening-loading').show();
+      $('div#lastfm').hide();
+      $('div#lastfm').html('<dl><dt class="lfm_art"><a href="#"></a></dt><dd class="lfm_song"></dd><dd class="lfm_artist"></dd><dd class="lfm_album"></dd></dl>');
       $('div#lastfm').lastFM({
         username: 'jdennes', apikey: '3ab5290b3f5973475ef258a41323fdad', number: 8, 
         artSize: 'small', noart: 'http://cdn.last.fm/flatness/catalogue/noimage/2/default_artist_small.png',
         onComplete: function(){}
       });
+      $('div#lastfm').show();
       $('img#listening-loading').hide();
     }
     $('a#tweeting-refresh').click(function(){
