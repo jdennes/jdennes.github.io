@@ -49,15 +49,26 @@
           artist = item.artist['#text'];
           album = item.album['#text'];
           time = item.date['uts'];
+          now_playing = ''
+          if (item.hasOwnProperty('@attr')) {
+            now_playing = item.@attr['nowplaying'];
+          }
 
           $this.append(container);
 
           var $current = $this.children(':eq('+i+')');
 
+          when = prettyDate(time);
+          if (when == "just now") {
+            when_html = when;
+          } else {
+            when_html = "about " + when;
+          }
+          
           $current.find('[class=lfm_song]').append(song);
           $current.find('[class=lfm_artist]').append(artist);
           $current.find('[class=lfm_art]').append("<img src='"+art+"' alt='Artwork for " + album + "'/>");
-          $current.find('[class=lfm_time]').append("about " + prettyDate(time));
+          $current.find('[class=lfm_time]').append((now_playing == "true" ? '<img width="12" height="12" src="http://cdn.last.fm/flatness/global/icon_eq.gif" alt="Now playing" /> ' : '') + when_html);
           $current.find('a').attr('href', url).attr('title', song + ' on Last.fm').attr('target', '_blank');
           
           // callback

@@ -8,7 +8,7 @@ function loadTweeting() {
   $('img#tweeting-loading').show();
   $('div#tweets').hide();
   getTwitters('tweets', { 
-    id: 'jdennes', count: 6, enableLinks: true, ignoreReplies: true, clearContents: true,
+    id: 'jdennestest', count: 6, enableLinks: true, ignoreReplies: true, clearContents: true,
     template: '"%text%" <a class="when" href="http://twitter.com/%user_screen_name%/statuses/%id%/"><br />%time%</a>'
   });
   $('div#tweets').show();
