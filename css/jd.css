@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
   background-color: #000000;
-  font-family: helvetica, arial, sans-serif;
+  font-family: georgia, palatino, "times new roman", times, serif;
   margin: 0;
 }
 a:link, a:visited { color: #dc000b; text-decoration:none; }
@@ -16,6 +16,7 @@ div#container {
   position: relative;
 }
 div#head { width: 960px; }
+h1, h2 { font-family: helvetica, arial, sans-serif; }
 h1 {
   font-size: 80px;
   letter-spacing: -5px;
@@ -24,11 +25,11 @@ h1 {
   text-align: left;
 }
 h2 {
-  font-size: 22px;
-  font-family: georgia, palatino, "times new roman", times, serif;
+  font-size: 28px;
   color: #dc000b;
   margin: 8px 0;
 }
+h2 a:hover, a:focus { text-decoration: none; }
 img#profile {
   float: right;
   border: 1px solid #000000;
@@ -36,16 +37,21 @@ img#profile {
   width: 60px;
   height: 60px;
 }
-div#story {
+div#about {
   float: left;
   width: 470px;
+}
+span#age { 
+  font-family: monospace;
+  font-size: 90%;
 }
 div.refresh {
   float: right;
   text-align: right;
   font-size: 12px;
-  padding: 20px 6px 0 0;
+  padding: 16px 6px 0 0;
 }
+div.refresh a { height: 16px; } /* Match the height of the adjacent image */
 div#listening {
   float: left;
   width: 225px;
@@ -73,6 +79,7 @@ div#tweeting {
   float: left;
   padding: 0;
   margin:0 0 10px 0;
+  width: 227px;
 }
 #lastfm dl dt {
   position: absolute;
