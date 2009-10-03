@@ -28,16 +28,6 @@ function loadListening() {
   $('img#listening-loading').hide();
 }
 
-$('a#tweeting-refresh').click(function(){
-  loadTweeting();
-  return false;
-});
-
-$('a#listening-refresh').click(function(){
-  loadListening();
-  return false;
-});
-
 $(document).ready(function(){
   setInterval('tick()', 1000);
   loadTweeting();

@@ -54,6 +54,16 @@
         <a href="http://github.com/jdennes/jdennes.github.com/">GitHub</a>.</div>
     </div>
     <script type="text/javascript">
+    $('a#tweeting-refresh').click(function(){
+      loadTweeting();
+      return false;
+    });
+    $('a#listening-refresh').click(function(){
+      loadListening();
+      return false;
+    });
+    </script>
+    <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + 
       "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
