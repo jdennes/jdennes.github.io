@@ -81,7 +81,7 @@ div#tweets a.when {
 #lastfm dl {
   position: relative;
   float: left;
-  padding: 0;
+  padding: 1px;
   margin:0 0 10px 0;
   width: 227px;
 }
