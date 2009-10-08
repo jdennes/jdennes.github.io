@@ -28,8 +28,17 @@ function loadListening() {
   $('img#listening-loading').hide();
 }
 
+function loadReading() {
+  $('img#reading-loading').show();
+  $('div#reading-shared-items').hide();
+  gReaderInit(6, '10795563111833728553');
+  $('div#reading-shared-items').show();
+  $('img#reading-loading').hide();
+}
+
 $(document).ready(function(){
   setInterval('tick()', 1000);
   loadTweeting();
   loadListening();
+  loadReading();
 });

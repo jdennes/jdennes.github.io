@@ -1,12 +1,12 @@
 body {
-  font-size: 18px;
+  font-size: 16px;
   background-color: #000000;
   font-family: georgia, palatino, "times new roman", times, serif;
   margin: 0;
 }
 a:link, a:visited { color: #dc000b; text-decoration:none; }
 a:hover, a:focus { text-decoration: underline; }
-p { margin: 10px 0 0 0; }
+p { margin: 6px 0 0 0; }
 div#container {
   background-color: #ffffff;
   margin: 0 auto;
@@ -38,13 +38,28 @@ img#profile {
   width: 60px;
   height: 60px;
 }
-div#about {
+div#main-left {
   float: left;
   width: 470px;
 }
+div#about { margin: 0 0 14px 0 }
 span#age { 
   font-family: monospace;
   font-size: 80%;
+}
+div#reading ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div#reading li {
+  padding: 0 0 6px 0;
+}
+div#reading span.item-details {
+  font-size: 14px;
+  font-style: italic;
 }
 div.refresh {
   float: right;
@@ -70,6 +85,7 @@ div#tweets ul {
   list-style-position: outside;
   list-style-type: none;
   padding: 0;
+  margin: 0;
   font-family: georgia, palatino, "times new roman", times, serif;
   font-style: italic;
 }
@@ -81,21 +97,16 @@ div#tweets a.when {
 #lastfm dl {
   position: relative;
   float: left;
-  padding: 1px;
-  margin:0 0 10px 0;
+  padding: 0;
+  margin: 0 0 10px 0;
   width: 227px;
 }
 #lastfm dl dt {
   position: absolute;
   width: 34px;
   height: 34px;
-}
-#lastfm dl dt a {
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 34px;
-  height: 34px;
+  top: 0;
 }
 #lastfm .lfm_art img {
   width: 34px;
@@ -104,8 +115,6 @@ div#tweets a.when {
 #lastfm dl dd.lfm_song {
   font-weight: bold;
   padding-bottom: 4px;
-  white-space: nowrap;
-  overflow: hidden;
   margin: 0 0 0 42px;
 }
 #lastfm dl dd.lfm_artist {
