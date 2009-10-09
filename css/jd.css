@@ -108,6 +108,13 @@ div#tweets a.when {
   left: 0;
   top: 0;
 }
+#lastfm dl dt a {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 0;
+  top: 0;
+}
 #lastfm .lfm_art img {
   width: 34px;
   height: 34px;
