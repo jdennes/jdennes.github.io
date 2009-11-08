@@ -36,9 +36,18 @@ function loadReading() {
   $('img#reading-loading').hide();
 }
 
+function loadCoding() {
+  $('img#coding-loading').show();
+  $('div#github-activity').hide();
+  loadGithubActivity();
+  $('div#github-activity').show();
+  $('img#coding-loading').hide();
+}
+
 $(document).ready(function(){
   setInterval('tick()', 1000);
   loadTweeting();
   loadListening();
   loadReading();
+  loadCoding();
 });

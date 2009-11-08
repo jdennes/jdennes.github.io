@@ -48,7 +48,10 @@
           song = item.name;
           artist = item.artist['#text'];
           album = item.album['#text'];
-          time = item.date['uts'];
+          time = '';
+          if (item.date) {
+            time = item.date['uts'];
+          }
           now_playing = '';
           if (item.hasOwnProperty('@attr')) {
             now_playing = item['@attr']['nowplaying'];
@@ -62,7 +65,7 @@
           $current.find('[class=lfm_song]').append(song);
           $current.find('[class=lfm_artist]').append(artist);
           $current.find('[class=lfm_art]').append("<img src='"+art+"' alt='Artwork for " + album + "'/>");
-          $current.find('[class=lfm_time]').append((now_playing == "true" ? '<img width="12" height="12" src="http://cdn.last.fm/flatness/global/icon_eq.gif" alt="Now playing" /> ' : '') + when);
+          $current.find('[class=lfm_time]').append((now_playing == "true" ? '<img width="12" height="12" src="http://cdn.last.fm/flatness/global/icon_eq.gif" alt="Now playing" /> ' : '') + (when == undefined && now_playing == "true" ? "Now playing" : when));
           $current.find('a').attr('href', url).attr('title', song + ' on Last.fm').attr('target', '_blank');
           
           // callback

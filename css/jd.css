@@ -23,7 +23,7 @@ h1 {
   line-height: 90%;
   margin: 0;
   text-align: left;
-  padding: 0 0 12px 0;
+  padding: 0 0 6px 0;
 }
 h1 span.red { color: #dc000b; }
 h2 {
@@ -39,11 +39,11 @@ img#profile {
   width: 60px;
   height: 60px;
 }
+/* div#about { margin: 0 0 14px 0 } */
 div#main-left {
   float: left;
   width: 470px;
 }
-div#about { margin: 0 0 14px 0 }
 span#age { 
   font-family: monospace;
   font-size: 80%;
@@ -62,6 +62,22 @@ div#reading span.item-details {
   font-size: 14px;
   font-style: italic;
 }
+div#coding ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div#coding li {
+  padding: 0 0 6px 0;
+}
+div#coding div.item-details {
+  padding-top: 3px;
+  font-size: 14px;
+  font-style: italic;
+}
+div#coding blockquote { margin: 0; }
 div.refresh {
   float: right;
   text-align: right;
@@ -136,6 +152,6 @@ div#foot {
   margin: 10px 0 0 0;
   float: left;
   width: 960px; 
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
 }

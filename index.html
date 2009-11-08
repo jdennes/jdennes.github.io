@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/twitter.js"></script>
     <script type="text/javascript" src="js/lastfm.js"></script>
     <script type="text/javascript" src="js/greader.js"></script>
+    <script type="text/javascript" src="js/github.js"></script>
     <script type="text/javascript" src="js/jd.js"></script>
   </head>
   <body>
@@ -20,23 +21,23 @@
           width="60" height="60" alt="me" />
         <h1>jdennes<span class="red">dot</span>github<span class="red">dot</span>com</h1>
       </div>
-      <div id="main-left">
-        <div id="about">
-          <h2>About</h2>
-          <p>James Dennes is a <span id="age">25</span> year old human being from
-          <a href="http://en.wikipedia.org/wiki/Sydney">Sydney, Australia</a>.</p>
-          <p>James loves writing software, and is currently very happy to be working on 
-            <a href="http://campaignmonitor.com/">Campaign Monitor</a> at 
-            <a href="http://freshview.com/">Freshview</a>. James previously worked on telecommunications 
-            software at <a href="http://www.clarity.com/">Clarity International</a> and studied 
-            computer science at <a href="http://www.uts.edu.au">UTS</a>.</p>
-          <p>When not coding, James can be found listening to, writing and playing 
-            <a href="http://www.last.fm/user/jdennes">music</a>. He can also regularly be found on 
-            a skateboard once again (after an extended hiatus).</p>
-          <p><a href="http://www.linkedin.com/in/jdennes">LinkedIn</a> records more information 
+      <div id="about">
+        <h2>About</h2>
+        <p>James Dennes is a <span id="age">25</span> year old human being from
+        <a href="http://en.wikipedia.org/wiki/Sydney">Sydney, Australia</a> who loves writing 
+          software and is currently very happy to be working on 
+          <a href="http://campaignmonitor.com/">Campaign Monitor</a> at 
+          <a href="http://freshview.com/">Freshview</a>.</p>
+        <p>James previously worked on telecommunications 
+          software at <a href="http://www.clarity.com/">Clarity International</a> and studied 
+          computer science at <a href="http://www.uts.edu.au">UTS</a>. 
+          <a href="http://www.linkedin.com/in/jdennes">LinkedIn</a> records more information 
           about James from a professional perspective.</p>
-          <p>James wrote this in the third-person.</p>
-        </div>
+        <p>When not coding, James can be found listening to, writing and playing 
+          <a href="http://www.last.fm/user/jdennes">music</a>. He can also regularly be found on 
+          a skateboard once again (after an extended hiatus).</p>
+      </div>
+      <div id="main-left">
         <div id="reading">
           <div class="refresh">
             <img id="reading-loading" src="img/loading.gif" width="16" height="16" alt="Loading..." />
@@ -44,6 +45,14 @@
           </div>
           <h2><a href="http://www.google.com/reader/shared/jdennes" title="Google Reader Shared Items">Reading</a></h2>
           <div id="reading-shared-items"></div>
+        </div>
+        <div id="coding">
+          <div class="refresh">
+            <img id="coding-loading" src="img/loading.gif" width="16" height="16" alt="Loading..." />
+            <a id="coding-refresh" href="#">Refresh</a>
+          </div>
+          <h2><a href="http://github.com/jdennes" title="GitHub Activity">Coding</a></h2>
+          <div id="github-activity"></div>
         </div>
       </div>
       <div id="tweeting">
@@ -62,7 +71,7 @@
         <h2><a href="http://last.fm/user/jdennes" title="Last.fm Recent Tracks">Listening</a></h2>
         <div id="lastfm"></div>
       </div>
-      <div id="foot">Built on <a href="http://pages.github.com/">GitHub Pages</a> and validated 
+      <div id="foot">James wrote this page in the third-person. Built on <a href="http://pages.github.com/">GitHub Pages</a> and validated 
         <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fjdennes.github.com">XHTML 
         1.0 Strict</a> and 
         <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fjdennes.github.com">CSS 2.1</a>. 
@@ -73,6 +82,10 @@
     <script type="text/javascript">
     $('a#reading-refresh').click(function(){
       loadReading();
+      return false;
+    });
+    $('a#coding-refresh').click(function(){
+      loadCoding();
       return false;
     });
     $('a#tweeting-refresh').click(function(){
