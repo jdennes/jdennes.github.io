@@ -19,7 +19,7 @@
         $.each(data.items, function(i,item) {
           if (i < settings.number) {
             $('<img/>').attr({ src: item.media.m.replace('_m.jpg', '_s.jpg'), alt: item.title, width: '50', height: '50'}).appendTo("#snapping")
-              .wrap("<a href=\"" + item.link + "\" title=\"" +item.title  + "\"></a>");
+              .wrap("<a href=\"" + item.link + "\" title=\"" +item.title  + "\" target=\"_blank\"></a>");
           }
           i++;
         });

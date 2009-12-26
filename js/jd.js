@@ -8,7 +8,7 @@ function loadSnapping() {
   $('img#snapping-loading').show();
   $('div#snapping').hide();
   $('div#snapping').flickr({
-    id: '99761031@N00', number: 15, lang: 'en-us',
+    id: '99761031@N00', number: 16, lang: 'en-us',
     onComplete: function(){}
   });
   $('div#snapping').show();
