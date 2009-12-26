@@ -4,6 +4,17 @@ function tick() {
   $('span#age').html(age.toFixed(8));
 }
 
+function loadSnapping() {
+  $('img#snapping-loading').show();
+  $('div#snapping').hide();
+  $('div#snapping').flickr({
+    id: '99761031@N00', number: 15, lang: 'en-us',
+    onComplete: function(){}
+  });
+  $('div#snapping').show();
+  $('img#snapping-loading').hide();
+}
+
 function loadTweeting() {
   $('img#tweeting-loading').show();
   $('div#tweets').hide();
@@ -35,7 +46,7 @@ function loadReading() {
   $('div#reading-shared-items').show();
   $('img#reading-loading').hide();
 }
-
+  
 function loadCoding() {
   $('img#coding-loading').show();
   $('div#github-activity').hide();
@@ -46,6 +57,7 @@ function loadCoding() {
 
 $(document).ready(function(){
   setInterval('tick()', 1000);
+  loadSnapping();
   loadTweeting();
   loadListening();
   loadReading();

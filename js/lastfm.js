@@ -13,11 +13,11 @@
   $.fn.lastFM = function(options) {
     
     var defaults = {
-      number: 10,
-      username: 'willblackmore',
-      apikey: '96e0589327a3f120074f74dbc8ec6443',
-      artSize: 'medium',
-      noart: 'images/noartwork.gif',
+      number: 8,
+      username: 'jdennes',
+      apikey: '3ab5290b3f5973475ef258a41323fdad',
+      artSize: 'small',
+      noart: 'http://cdn.last.fm/flatness/catalogue/noimage/2/default_artist_small.png',
       onComplete: function(){}
     },
     settings = $.extend({}, defaults, options);
