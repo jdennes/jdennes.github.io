@@ -5,7 +5,8 @@ function githubActivitySeed(data) {
   var is = data.value.items;
   for (var i = 0; i < 6; i++) {
     html.push('<li>');
-    html.push('<a href="' + is[i].link + '">' + prettyDate(is[i]["y:published"].utime) + ' ' + is[i].title + '</a><div class="item-details">' +is[i].content.content + '</div>');
+    // Add 8 hours to utime, as it's not in GMT
+    html.push('<a href="' + is[i].link + '">' + prettyDate(parseInt(is[i]["y:published"].utime) + 28800) + ' ' + is[i].title + '</a><div class="item-details">' +is[i].content.content + '</div>');
     html.push('</li>');
   }
   html.push('</ul>');
