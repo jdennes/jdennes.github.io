@@ -6,7 +6,7 @@ function gReaderSeed(data) {
   for (var i = 0, j = is.length; i < j; i++) {
     html.push('<li>');
     var pd = new Date(is[i].published * 1000);
-    html.push('<a class="item-title" href="' + is[i].alternate.href + '">' + is[i].title + '</a><br /><span class="item-details">by ' + is[i].author + ' via <a href="' + is[i].origin.htmlUrl + '">' + is[i].origin.title + '</a> (' + pd.getDate() + '/' + (pd.getMonth() + 1) + '/' + pd.getFullYear() + ')</span>');
+    html.push('<a class="item-title" href="' + is[i].alternate.href + '">' + is[i].title + '</a><br /><span class="item-details">' + (is[i].author == undefined ? '' : 'by ' + is[i].author + ' ') + 'via <a href="' + is[i].origin.htmlUrl + '">' + is[i].origin.title + '</a> (' + pd.getDate() + '/' + (pd.getMonth() + 1) + '/' + pd.getFullYear() + ')</span>');
     html.push('</li>');
   }
   html.push('</ul>');

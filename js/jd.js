@@ -19,7 +19,7 @@ function loadTweeting() {
   $('img#tweeting-loading').show();
   $('div#tweets').hide();
   getTwitters('tweets', { 
-    id: 'jdennes', count: 6, enableLinks: true, ignoreReplies: true, clearContents: true,
+    id: 'jdennes', count: 8, enableLinks: true, ignoreReplies: true, clearContents: true,
     template: '"%text%" <a class="when" href="http://twitter.com/%user_screen_name%/statuses/%id%/"><br />%time%</a>'
   });
   $('div#tweets').show();
@@ -31,7 +31,7 @@ function loadListening() {
   $('div#lastfm').hide();
   $('div#lastfm').html('<dl><dt class="lfm_art"><a href="#"></a></dt><dd class="lfm_song"></dd><dd class="lfm_artist"></dd><dd class="lfm_time"></dd></dl>');
   $('div#lastfm').lastFM({
-    username: 'jdennes', apikey: '3ab5290b3f5973475ef258a41323fdad', number: 8, 
+    username: 'jdennes', apikey: '3ab5290b3f5973475ef258a41323fdad', number: 9, 
     artSize: 'small', noart: 'http://cdn.last.fm/flatness/catalogue/noimage/2/default_artist_small.png',
     onComplete: function(){}
   });

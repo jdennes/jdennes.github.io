@@ -42,6 +42,7 @@ img#profile {
   width: 60px;
   height: 60px;
 }
+div#about { margin-top: 12px; }
 div#main-left {
   float: left;
   width: 470px;
