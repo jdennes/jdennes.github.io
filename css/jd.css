@@ -19,25 +19,28 @@ div#container {
 div#head { width: 960px; }
 h1, h2 { font-family: helvetica, arial, sans-serif; }
 h1 {
-  color: #231F1F;
-  font-size: 64px;
-  letter-spacing: -4px;
+  color: #B81613;
+  font-size: 66px;
+  letter-spacing: -2px;
   line-height: 90%;
   margin: 0;
   text-align: left;
   padding: 0 0 6px 0;
+  text-shadow: 2px 2px 6px #0c0c0c;
 }
-h1 span.red { color: #B81613; }
 h2 {
   font-size: 28px;
-  color: #B81613;
+  color: #231F1F; #B81613;
   margin: 8px 0;
+  text-shadow: 1px 1px 2px #0c0c0c;
 }
 h2 a:hover, h2 a:focus { text-decoration: none; }
 h2 a:link, h2 a:hover, h2 a:focus, h2 a:visited { color: #B81613; background: #ffffff; text-decoration: none; }
 img#profile {
   float: right;
-  border: 1px solid #231F1F;
+  border: 2px solid #231F1F;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   margin: 0;
   width: 60px;
   height: 60px;
