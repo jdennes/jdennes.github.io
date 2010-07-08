@@ -1,15 +1,15 @@
 body {
   font-size: 15px;
-  color: #231F1F;
-  background-color: #231F1F;
+  color: #888;
+  background-color: #fc6e09;
   font-family: georgia, palatino, "times new roman", times, serif;
   margin: 0;
 }
-a:link, a:visited { color: #3D3D3D  ; text-decoration: underline; }
-a:hover, a:focus { text-decoration: none; background: #231F1F; color: #ffffff; }
+a:link, a:visited { color: #ccc  ; text-decoration: underline; }
+a:hover, a:focus { text-decoration: none; background: #fc6e09; color: #000; }
 p { margin: 6px 0 0 0; }
 div#container {
-  background-color: #ffffff;
+  background-color: #1a1717;
   margin: 0 auto;
   width: 960px;
   padding: 16px;
@@ -19,26 +19,26 @@ div#container {
 div#head { width: 960px; }
 h1, h2 { font-family: helvetica, arial, sans-serif; }
 h1 {
-  color: #B81613;
+  color: #fc6e09;
   font-size: 66px;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   line-height: 90%;
   margin: 0;
   text-align: left;
   padding: 0 0 6px 0;
-  text-shadow: 2px 2px 6px #0c0c0c;
+  text-shadow: 1px 1px 0 #6e6e6e;
 }
 h2 {
   font-size: 28px;
-  color: #231F1F; #B81613;
+  color: #fc6e09;
   margin: 8px 0;
-  text-shadow: 1px 1px 2px #0c0c0c;
+  text-shadow: 1px 1px 0 #6e6e6e;
 }
 h2 a:hover, h2 a:focus { text-decoration: none; }
-h2 a:link, h2 a:hover, h2 a:focus, h2 a:visited { color: #B81613; background: #ffffff; text-decoration: none; }
+h2 a:link, h2 a:hover, h2 a:focus, h2 a:visited { color: #fc6e09; background-color: #1a1717; text-decoration: none; }
 img#profile {
   float: right;
-  border: 2px solid #231F1F;
+  border: 2px solid #1a1717;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   margin: 0;
