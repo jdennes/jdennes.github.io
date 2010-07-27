@@ -20,7 +20,7 @@ div#head { width: 960px; }
 /*h1, h2 { font-family: helvetica, arial, sans-serif; }*/
 h1 {
   color: #000;
-  font-size: 66px;
+  font-size: 52px;
   font-weight: normal;
   margin: 0;
   text-align: left;
@@ -28,7 +28,7 @@ h1 {
   text-shadow: 1px 1px 0 #6e6e6e;
 }
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   color: #12b7ea; 
   margin: 8px 0;
