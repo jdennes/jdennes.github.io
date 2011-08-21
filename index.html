@@ -1,126 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <meta name="google-site-verification" content="wMIMtJpGd5rUF4hvjJQdT_nBepgXOnnYf2AGKUFXGcE" />
     <title>James Dennes</title>
-    <link rel="stylesheet" href="/css/jd.css" type="text/css" media="screen" />
-    <link rel="shortcut icon" href="/img/favicon.ico" /> 
-    <script type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jd.min.js"></script>
-    <!-- Un-minified references
-    <script type="text/javascript" src="/js/prettydate.js"></script>
-    <script type="text/javascript" src="/js/flickr.js"></script>
-    <script type="text/javascript" src="/js/twitter.js"></script>
-    <script type="text/javascript" src="/js/lastfm.js"></script>
-    <script type="text/javascript" src="/js/greader.js"></script>
-    <script type="text/javascript" src="/js/github.js"></script>
-    <script type="text/javascript" src="/js/jd.js"></script>
-    -->
+    <link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+      background-color: #111;
+      font-family: 'Coustard', serif;
+      color: #5c5c5c; }
+    a {
+      color: #5c5c5c;
+      text-decoration: none;
+      border-bottom: 4px solid #5c5c5c; }
+    a:hover {
+      color: #707070;
+      border-bottom-color: #707070; }
+    h1 {
+      font-size: 80px;
+      margin-top: 80px;
+      text-align: center; }
+    h1 a {
+      margin-bottom: 200px; }
+    div#container {
+      width: 800px;
+      margin: 0 auto; }
+    </style>
   </head>
   <body>
     <div id="container">
-      <div id="head">
-        <img id="profile" src="http://www.gravatar.com/avatar/55fd031da91ef9af6e6ed88b101416a1?s=60"
-          width="60" height="60" alt="me" />
-        <h1><a href="#">Hey there, I&rsquo;m James Dennes</a></h1>
-      </div>
-      <div id="about">
-        <p>I live in Sydney, create software (mostly related to the web), and am currently very happy to be 
-          <a href="http://www.campaignmonitor.com/meet-the-team/#james-dennes" target="_blank">working</a> on 
-          <a href="http://www.campaignmonitor.com/" target="_blank">Campaign Monitor</a>
-          with a great group of people who also love <a href="http://pingpongninja.com/" target="_blank">ping pong</a>.</p>
-        <p>In the past I <a href="http://www.linkedin.com/in/jdennes">worked</a> on telecommunications 
-          software and prior to that, studied and tutored computer science at 
-          <a href="http://www.uts.edu.au" target="_blank">UTS</a>.</p>
-        <p>I also love running, playing <a href="http://www.flickr.com/photos/jdennes/4918338154/" target="_blank">guitar</a>,
-	        watching <a href="http://www.flickr.com/photos/jdennes/4947751503/" target="_blank">live music</a>, riding 
-	        <a href="http://www.flickr.com/photos/jdennes/4278521326/" target="_blank">skateboards</a>, and being with 
-	        <a href="http://www.flickr.com/photos/jdennes/5021851097/" target="_blank">Dass</a>.</p>
-      </div>
-      <div class="refresh">
-        <img id="snapping-loading" src="/img/loading.gif" width="16" height="16" alt="Loading..." />
-        <a id="snapping-refresh" href="#">Refresh</a>
-      </div>
-      <h2><a href="http://www.flickr.com/photos/jdennes/" title="Flickr Photostream">Snapping</a></h2>
-      <div id="snapping"></div>
-      <div id="main-left">
-        <div id="reading">
-          <div class="refresh">
-            <img id="reading-loading" src="/img/loading.gif" width="16" height="16" alt="Loading..." />
-            <a id="reading-refresh" href="#">Refresh</a>
-          </div>
-          <h2><a href="http://www.google.com/reader/shared/jdennes" title="Google Reader Shared Items">Reading</a></h2>
-          <div id="reading-shared-items"></div>
-        </div>
-        <div id="coding">
-          <div class="refresh">
-            <img id="coding-loading" src="/img/loading.gif" width="16" height="16" alt="Loading..." />
-            <a id="coding-refresh" href="#">Refresh</a>
-          </div>
-          <h2><a href="http://github.com/jdennes" title="GitHub Activity">Coding</a></h2>
-          <div id="github-activity"></div>
-        </div>
-      </div>
-      <div id="tweeting">
-        <div class="refresh">
-          <img id="tweeting-loading" src="/img/loading.gif" width="16" height="16" alt="Loading..." />
-          <a id="tweeting-refresh" href="#">Refresh</a>
-        </div>
-        <h2><a href="http://twitter.com/jdennes" title="Twitter Updates">Tweeting</a></h2>
-        <div id="tweets"></div>
-      </div>
-      <div id="listening">
-        <div class="refresh">
-          <img id="listening-loading" src="/img/loading.gif" width="16" height="16" alt="Loading..." />
-          <a id="listening-refresh" href="#">Refresh</a>
-        </div>
-        <h2><a href="http://last.fm/user/jdennes" title="Last.fm Recent Tracks">Listening</a></h2>
-        <div id="lastfm"></div>
-      </div>
-      <div id="foot">I wrote this page using <a href="http://jquery.com/">jQuery</a>, 
-        <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fjdennes.github.com">XHTML 
-        1.0 Strict</a> and
-        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fjdennes.github.com">CSS 2.1</a>
-        on <a href="http://pages.github.com/">GitHub Pages</a>. All code used 
-        in the making of it is publicly available on 
-        <a href="http://github.com/jdennes/jdennes.github.com/">GitHub</a>. 
-      </div>
+      <h1>Hey, I'm <a href="http://jdenn.es/">James</a> !</h1>
     </div>
-    <script type="text/javascript">
-    $('a#snapping-refresh').click(function(){
-      loadSnapping();
-      return false;
-    });
-    $('a#reading-refresh').click(function(){
-      loadReading();
-      return false;
-    });
-    $('a#coding-refresh').click(function(){
-      loadCoding();
-      return false;
-    });
-    $('a#tweeting-refresh').click(function(){
-      loadTweeting();
-      return false;
-    });
-    $('a#listening-refresh').click(function(){
-      loadListening();
-      return false;
-    });
-    </script>
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + 
-      "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-10651397-1");
-      pageTracker._trackPageview();
-    } catch(err) {}
-    </script>
   </body>
 </html>
