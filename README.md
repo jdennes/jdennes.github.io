@@ -1,4 +1,3 @@
-Hey, I'm James
-===========================
+# Just a GitHub Pages site.
 
-Just GitHub pages site.
+
