@@ -2,35 +2,47 @@
 <html>
   <head>
     <title>James Dennes</title>
-    <link href='/favicon.ico?v=circular' rel='icon' type='image/x-icon'>
+    <link href='/assets/favicon.ico' rel='icon' type='image/x-icon'>
+    <link href='/assets/screen.css' media='all' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
-    <style>
-    body {
-      background: white;
-      font-family: "Merriweather", serif;
-      color: #333333; }
-    h1 {
-      font-size: 72px;
-      margin-top: 100px;
-      text-align: center; }
-    a {
-      color: #333333;
-      text-decoration: none;
-      border-bottom: 1px solid #333333; }
-      a:hover {
-        color: #555555;
-        border-bottom: 1px solid #555555; }
-    div#container {
-      width: 800px;
-      margin: 0 auto; }
-    </style>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/assets/weather.js' type='text/javascript'></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10651397-4']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
-    <div id="container">
-      <h1>
-        A GitHub Pages site by
-        <a href="http://jdenn.es" target="_blank">James Dennes</a>.
-      </h1>
+    <div id='container'>
+      <div id='about'>
+        <h1 class='name'>
+          James Dennes
+        </h1>
+        <div id='summary'>
+          I make things on the web, ride skateboards, work at <a href='https://github.com/' target='_blank'>GitHub</a>, and live in Berlin.
+          <span class='weather-icon'>
+            <a href='http://isberlinhappytoday.com' target='_blank'></a>
+          </span>
+        </div>
+        <div id='links'>
+          <a href='https://github.com/jdennes/' title='My code on GitHub' target='_blank'>&#xe01b;</a>
+          <a href='http://blog.jdenn.es/' title='My blog on Tumblr' target='_blank'>&#xe01c;</a>
+          <a href='http://www.flickr.com/photos/jdennes/' title='My photos on Flickr' target='_blank'>&#xe023;</a>
+          <a href='http://instagram.com/jdennes/' title='My photos on Instagram' target='_blank'>&#xe021;</a>
+          <a href='https://twitter.com/jdennes/' title='My tweets on Twitter' target='_blank'>&#xe01f;</a>
+          <a href='http://www.linkedin.com/in/jdennes' title='My projects on LinkedIn' target='_blank'>&#xe01d;</a>
+          <a href='https://soundcloud.com/jdennes/' title='Music I listen to on SoundCloud' target='_blank'>&#xe01e;</a>
+          <a href='http://www.last.fm/user/jdennes/' title='Music I listen to on Last.fm' target='_blank'>&#xe022;</a>
+          <a href='https://www.facebook.com/jdennes' title='My presence on Facebook' target='_blank'>&#xe020;</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
