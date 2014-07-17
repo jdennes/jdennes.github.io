@@ -1,5 +1,5 @@
 ---
-some: stuff
+title: test
 ---
 
 @jdennes
