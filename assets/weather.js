@@ -58,7 +58,7 @@
   this.load_weather = function() {
     var callback, url;
     callback = 'weather_callback';
-    url = "http://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%20638242%20and%20u%20%3D%20'c'&format=json&callback=" + callback;
+    url = "https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%20638242%20and%20u%20%3D%20'c'&format=json&callback=" + callback;
     $('span.weather-icon a').html('&nbsp;&nbsp;&nbsp;');
     return $.ajax({
       url: url,
