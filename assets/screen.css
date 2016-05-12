@@ -63,17 +63,3 @@ div#links a:hover {
   color: #777777;
   border-bottom: none;
 }
-
-span.weather-icon {
-  font-family: "jdennes";
-  font-size: 24px;
-  cursor: pointer;
-}
-span.weather-icon a {
-  color: #333333;
-  border-bottom: none;
-}
-span.weather-icon a:hover {
-  color: #777777;
-  border-bottom: none;
-}
