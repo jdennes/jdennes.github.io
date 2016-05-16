@@ -25,7 +25,7 @@ a:hover {
 }
 
 .container {
-  max-width: 768px; padding-top: 40px;
+  max-width: 768px; padding-top: 30px;
 }
 
 h1, h2 {
@@ -34,7 +34,7 @@ h1, h2 {
 
 h1 {
   font-size: 72px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -44,15 +44,9 @@ h2 a, h2 a:link, h2 a:active, h2 a:visited, h2 a:hover {
   border-bottom: none;
 }
 
-div#summary {
-  font-size: 20px;
-  line-height: 28px;
-}
-
 div#links {
   font-family: "jdennes";
   font-size: 35px;
-  margin-top: 20px;
 }
 div#links a {
   color: #333333;
