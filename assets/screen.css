@@ -34,7 +34,7 @@ h1, h2 {
 
 h1 {
   font-size: 72px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -52,7 +52,7 @@ div#summary {
 div#links {
   font-family: "jdennes";
   font-size: 35px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 div#links a {
   color: #333333;
