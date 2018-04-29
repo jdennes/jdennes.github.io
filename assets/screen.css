@@ -1,23 +1,12 @@
-@font-face {
-  font-family: 'jdennes';
-  src: url("/assets/jdennes.eot");
-  src: url("/assets/jdennes.eot?#iefix") format("embedded-opentype"), url("/assets/jdennes.woff") format("woff"), url("/assets/jdennes.ttf") format("truetype"), url("/assets/jdennes.svg#jdennes") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 html, body {
-  font-family: "Merriweather", serif;
+  font-family: "Consolas", "Courier", "fixed-width";
   font-size: 20px;
-  background: white;
-  color: #333333;
-  text-align: center;
+  color: #000000;
 }
 
 a, a:link, a:visited, a:active {
-  color: #777777;
+  color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid #999999;
 }
 a:hover {
   color: #999999;
@@ -28,13 +17,10 @@ a:hover {
   max-width: 768px; padding-top: 30px;
 }
 
-h1, h2 {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 72px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000000;
 }
 
 h2 {
@@ -45,15 +31,13 @@ h2 a, h2 a:link, h2 a:active, h2 a:visited, h2 a:hover {
 }
 
 div#links {
-  font-family: "jdennes";
-  font-size: 35px;
+  font-size: 20px;
 }
 div#links a {
-  color: #333333;
-  margin: 0 6px;
+  color: #000000;
   border-bottom: none;
 }
 div#links a:hover {
-  color: #777777;
+  color: #888888;
   border-bottom: none;
 }
