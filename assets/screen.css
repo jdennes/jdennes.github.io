@@ -28,11 +28,12 @@ a:hover {
 h1 {
   font-size: 72px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ffffff;
+  background-color: #000000;
 }
 
 h2 {
   font-size: 44px;
+  background-color: #000000;
 }
 h2 a, h2 a:link, h2 a:active, h2 a:visited, h2 a:hover {
   border-bottom: none;
@@ -43,6 +44,8 @@ div#links {
 }
 div#links a {
   color: #ffffff;
+  background-color: #000000;
+  padding: 4px;
   border-bottom: none;
 }
 div#links a:hover {
