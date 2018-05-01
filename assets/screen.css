@@ -1,11 +1,19 @@
 html, body {
   font-family: "Consolas", "Courier", "fixed-width";
   font-size: 20px;
-  color: #000000;
+  color: #ffffff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: fixed;
 }
 
 a, a:link, a:visited, a:active {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
@@ -20,7 +28,7 @@ a:hover {
 h1 {
   font-size: 72px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ffffff;
 }
 
 h2 {
@@ -34,10 +42,10 @@ div#links {
   font-size: 20px;
 }
 div#links a {
-  color: #000000;
+  color: #ffffff;
   border-bottom: none;
 }
 div#links a:hover {
-  color: #888888;
+  color: #999999;
   border-bottom: none;
 }
