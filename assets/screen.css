@@ -22,7 +22,7 @@ a:hover {
 }
 
 .container {
-  max-width: 768px; padding-top: 30px;
+  max-width: 768px; padding-top: 20px;
 }
 
 h1 {
@@ -39,16 +39,32 @@ h2 a, h2 a:link, h2 a:active, h2 a:visited, h2 a:hover {
   border-bottom: none;
 }
 
-div#links {
+.links {
   font-size: 20px;
 }
-div#links a {
+.links a {
   color: #ffffff;
   background-color: #000000;
   padding: 4px;
   border-bottom: none;
 }
-div#links a:hover {
+.links a:hover {
   color: #999999;
   border-bottom: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.caption {
+  background-color: #000000;
+  font-size: 16px;
+}
+.caption a {
+  border-bottom: solid 1px #ffffff;
 }
