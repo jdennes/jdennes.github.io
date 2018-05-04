@@ -1,5 +1,5 @@
 markdown: kramdown
 repository: jdennes/jdennes.github.io
-gems:
+plugins:
 - jemoji
 - jekyll-github-metadata
