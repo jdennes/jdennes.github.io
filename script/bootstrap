@@ -4,4 +4,4 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-bundle install
+bundle install --path vendor/bundle
